@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
             <img src="./assets/img/profile.png" class="img-thumbnail" alt="" srcset="">
             <div class="text-profile">
                 <div class="name-profile">
-                    <h2>Ilham Prasetya</h2>
-                    <blockquote class="quote">Frontend Designer</blockquote>
+                    <h2 id="title-name">Ilham Prasetya</h2>
+                    <blockquote class="quote" id="roles">Frontend Designer</blockquote>
                 </div>
                 <div class="profile mb-5">
                     <div class="btn blue">Kontak</div>
@@ -43,53 +43,56 @@
                 <div><strong>Usia</strong></div>
                 <div><strong>Lokasi</strong></div>
                 <div><strong>Pengalaman</strong></div>
+                <div><strong>Email</strong></div>
             </div>
             <div class="list-content">
-                <div>Full Time</div>
-                <div>20</div>
-                <div>Jakarta, Indonesia</div>
-                <div>ilhamprazsetyo33@gmail.com</div>
+                <p id="availability">Full Time</p>
+                <p id="ages">20</p>
+                <p id="locations">Jakarta, Indonesia</p>
+                <p id="experience">3</p>
+                <p id="email">ilhamprazsetyo33@gmail.com</p>
             </div>
         </div>
     </div>
     <!-- end card -->
     <!-- forms -->
-    <form>
+    <form id="myform" onsubmit="return false">
         <div class="container card form">
             <div class="mb-5">
                 <label for="nama">Nama</label>
-                <input type="text" id="nama" name="nama">
+                <input type="text" required id="nama" name="nama">
             </div>
             <div class="mb-5">
-                <label for="nama">Role</label>
-                <input type="text" id="nama" name="nama">
+                <label for="role">Role</label>
+                <input type="text" id="role" name="role">
             </div>
             <div class="mb-5">
-                <label for="nama">Availability</label>
-                <input type="text" id="nama" name="nama">
+                <label for="availability">Availability</label>
+                <input type="text" id="availability" name="availability">
             </div>
             <div class="mb-5">
-                <label for="nama">Age</label>
-                <input type="text" id="nama" name="nama">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
             </div>
             <div class="mb-5">
-                <label for="nama">Lokasi</label>
-                <input type="text" id="nama" name="nama">
+                <label for="lokasi">Lokasi</label>
+                <input type="text" id="lokasi" name="lokasi">
             </div>
             <div class="mb-5">
-                <label for="nama">Years Eksperience</label>
-                <input type="text" id="nama" name="nama">
+                <label for="exp">Years Eksperience</label>
+                <input type="text" id="exp" name="exp">
             </div>
             <div class="mb-5">
-                <label for="nama">Email</label>
-                <input type="text" id="nama" name="nama">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
             </div>
         </div>
         <div class="submit">
-            <button class="kirim">Kirim</button>
+            <button class="kirim" onclick="getValueForm()">Kirim</button>
         </div>
     </form>
     <!-- end form -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

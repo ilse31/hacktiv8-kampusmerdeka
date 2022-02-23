@@ -103,12 +103,15 @@ input {
   box-sizing: border-box;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+input[type="email"] {
   width: 100%;
   display: block;
   padding: 10px;
   margin: 5px 0;
 }
+
 .form {
   flex-direction: column;
 }
