@@ -1,0 +1,71 @@
+.sidenav {
+  height: 100%;
+  width: 200px;
+  text-decoration: none;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: #bc5b3b;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.navlink {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(197, 195, 195);
+  display: block;
+}
+
+.active {
+  color: white;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */ /* Increased text to enable scrolling */
+  padding: 0px 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
