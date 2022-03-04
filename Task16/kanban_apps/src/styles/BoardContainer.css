@@ -1,0 +1,36 @@
+.board-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.board {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.board-header {
+  font-size: 1rem;
+  border: 1px solid blue;
+  border-radius: 8px;
+  margin: auto;
+  padding: 10px;
+}
+
+.ellipsis-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.custom-button {
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+}

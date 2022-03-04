@@ -40,7 +40,7 @@ function App() {
           justifyContent: "center",
         }}>
         {antrian.length === 0
-          ? "list kosong"
+          ? "antrian kosong"
           : antrian?.map((item, index) => <div key={index}>{`${item}=>`}</div>)}
       </div>
     </div>

@@ -1,0 +1,16 @@
+.kanban-card {
+  color: white;
+  background: #2374e1;
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 3px;
+  width: 10rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.gray-background {
+  background: gray;
+  opacity: 0.5;
+}

@@ -5,11 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="description" content="Simple Kanban board" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +20,38 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- Google fonts, material icons, react bootstrap-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 
+      Load Google fonts asynchronously 
+      Ref: https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously
+      Set media type to an invalid value so that the browser will load the stylesheet asynchronously 
+      On load, change the media type to a valid value so that the stylesheet is applied
+    -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin
+    />
+
+    <title>Simple Kanban Board</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +66,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- React bootstrap scripts-->
+    <script
+      src="https://unpkg.com/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+    <script>
+      var Alert = ReactBootstrap.Alert;
+    </script>
   </body>
 </html>
