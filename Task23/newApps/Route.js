@@ -2,7 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "./pages/Home.jsx";
-import Ionicons from "react-native-vector-icons/MaterialCommunityIcons";
+import MaterialCommunity from "react-native-vector-icons/MaterialCommunityIcons";
 import Postpage from "./pages/Postpage.jsx";
 import CommentPage from "./pages/CommentPage.jsx";
 
@@ -22,7 +22,9 @@ const Route = () => {
             } else if (route.name === "CommentPage") {
               iconName = focused ? "comment" : "comment-check";
             }
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return (
+              <MaterialCommunity name={iconName} size={size} color={color} />
+            );
           },
           tabBarActiveTintColor: "tomato",
           tabBarInactiveTintColor: "gray",
