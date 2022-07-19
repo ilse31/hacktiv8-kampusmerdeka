@@ -1,6 +1,6 @@
 # Getting Started with Create Next App
 
-This project was bootstrapped with [Create Next App](https://github.com/facebook/create-next-app).
+This project was bootstrapped with [Create Next App](https://github.com/vercel/next.js/).
 
 ## Available Scripts
 
